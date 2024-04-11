@@ -1,0 +1,102 @@
+---
+import {Image} from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import heroKuva from '/src/images/truck-highway-night-with-mountains-background.jpg';
+import '../styles/tailwind.css';
+import '../styles/global.css';
+import varastoKuva from '/src/images/warehouse-with-forklift-generative-ai.jpg'
+import kuljetusKuva from '/src/images/white-truck-with-word-volvo-front.jpg'
+import konsultointiKuva from '/src/images/truck-airplane-with-container-cargo-logistic-import-export-concept-smart-technology-with-global-logistics-partnership-transportation.jpg'
+import paastoKuva from '/src/images/truck-transport-road-sunset-cargo.jpg'
+---
+
+<Layout title="Etusivu">
+    <Header />
+    <main>
+        <div style="min-height: 80vh" class="flex heroimage relative">
+            <Image src={heroKuva} widths={[240,540,720,1080,1440]} class="object-cover size-full absolute object-center" alt="asd" />
+            <div class="container m-auto relative z-40 p-8 mx-auto content-gap">
+                <h1 class="text-white" style="max-width: 28ch">Luotettavaa kuljetustoimintaa jo vuodesta 1983
+                </h1>
+                <p class="text-xl text-white" style="max-width: 60ch">Kuljetuskalustomme on suunniteltu ja varustettu
+                    myös elintarvikkeiden kuljetukseen soveltuvaksi.</p>
+            </div>
+            <div class="bg-black opacity-60 z-10 absolute size-full"></div>
+        </div>
+
+        <section class="container py-24 mx-auto space-y-12">
+            <h2>Tutustu palveluihimme</h2>
+            <div class="grid gap-8 md:grid-cols-3">
+                <div class="palvelu-card">
+                    <div class="palvelu-card__media-wrapper">
+                        <Image src={kuljetusKuva} widths={[240,540,720]} alt="asd" class="palvelu-card__image" />
+                    </div>
+                    <div class="palvelu-card__body-wrapper">
+                        <h3 class="palvelu-card__heading">
+                            Kuljetustoiminta
+                        </h3>
+                        <p class="palvelu-card__excerpt">
+                            Nisl pretium fusce id velit ut. Cursus turpis massa tincidunt dui ut ornare lectus sit.
+                            Ultrices vitae auctor eu augue ut lectus.
+                        </p>
+                        <a class="palvelu-card__readmore">
+                            Lue lisää
+                        </a>
+                    </div>
+                </div>
+                <div class="palvelu-card">
+                    <div class="palvelu-card__media-wrapper">
+                        <Image src={varastoKuva} widths={[240,540,720]} alt="asd" class="palvelu-card__image" />
+                    </div>
+                    <div class="palvelu-card__body-wrapper">
+                        <h3 class="palvelu-card__heading">
+                            Varastointi
+                        </h3>
+                        <p class="palvelu-card__excerpt">
+                            Nisl pretium fusce id velit ut. Cursus turpis massa tincidunt dui ut ornare lectus sit.
+                            Ultrices vitae auctor eu augue ut lectus.
+                        </p>
+                        <a class="palvelu-card__readmore">
+                            Lue lisää
+                        </a>
+                    </div>
+                </div>
+                <div class="palvelu-card">
+                    <div class="palvelu-card__media-wrapper">
+                        <Image src={konsultointiKuva} widths={[240,540,720]} alt="asd" class="palvelu-card__image" />
+                    </div>
+                    <div class="palvelu-card__body-wrapper">
+                        <h3 class="palvelu-card__heading">
+                            Konsultaatio
+                        </h3>
+                        <p class="palvelu-card__excerpt">
+                            Nisl pretium fusce id velit ut. Cursus turpis massa tincidunt dui ut ornare lectus sit.
+                            Ultrices vitae auctor eu augue ut lectus.
+                        </p>
+                        <a class="palvelu-card__readmore">
+                            Lue lisää
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="background-color: blanchedalmond" class="flex relative">
+            <Image src={paastoKuva} widths={[240,540,720,1080,1440]} class="object-cover size-full absolute object-center" alt="asd" />
+            <div class="bg-black opacity-70 z-10 absolute size-full"></div>
+            <div class="z-20 container py-24 grid md:grid-cols-6">
+                <div class="col-span-4 content-gap text-white">
+                    <h2>Haluamme omalta osaltamme edistää ilmastonmuutoksen torjumista</h2>
+                    <p>Uusin investointimme on kaasumoottorikäyttöinen moduuliyhdistelmä. Kaasuajoneuvon
+                        hiilidioksidipäästöt on pienemmät, kuin dieseliä käyttävien rekkojen, pienhiukkaspäästöjä ei
+                        synny juuri lainkaan.</p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+</Layout>

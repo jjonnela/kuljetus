@@ -1,0 +1,60 @@
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/open-sans-v28-latin-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/open-sans-v28-latin-500.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/open-sans-v28-latin-600.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/open-sans-v28-latin-700.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+.palvelu-card__body-wrapper {
+    @apply flex flex-col;
+    @apply p-7;
+    @apply space-y-4;
+
+    border-right: 1px solid #dddedf;
+    border-left: 1px solid #dddedf;
+    border-bottom: 1px solid #dddedf;
+}
+
+.palvelu-card__excerpt {
+    @apply text-sm
+}
+
+.palvelu-card__media-wrapper {
+    height: 13.5rem;
+}
+
+.palvelu-card__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content-gap {
+    @apply space-y-6;
+}
